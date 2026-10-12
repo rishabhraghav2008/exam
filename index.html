@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura News | Online News Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">Aura<span>News</span></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#world">World</a></li>
+                <li><a href="#tech">Tech</a></li>
+                <li><a href="#sports">Sports</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Headlines / Hero Section -->
+        <section class="headlines">
+            <div class="hero-article">
+                <div class="hero-content">
+                    <span class="category-tag tag-tech">Technology</span>
+                    <h2>The Future of AI: How Machine Learning is Shaping 2027</h2>
+                    <p>Explore the groundbreaking advancements in artificial intelligence and what it means for the upcoming year.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main News & Trending Grid -->
+        <div class="news-layout">
+            <!-- News Articles -->
+            <section class="latest-news">
+                <h3>Latest Articles</h3>
+                <div class="news-grid">
+                    <article class="news-card">
+                        <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');"></div>
+                        <div class="card-content">
+                            <span class="category-tag tag-world">Global Economy</span>
+                            <h4>Market hits record highs amidst new policies</h4>
+                            <p>Global markets rallied today following the announcement of new trade agreements...</p>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1542204165-65bf26472b9b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');"></div>
+                        <div class="card-content">
+                            <span class="category-tag tag-sports">Sports</span>
+                            <h4>Championship Finals: An unforgettable match</h4>
+                            <p>The underdog team secured a stunning victory in the final seconds of the game...</p>
+                        </div>
+                    </article>
+                    <article class="news-card">
+                        <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');"></div>
+                        <div class="card-content">
+                            <span class="category-tag tag-tech">Gadgets</span>
+                            <h4>Next-Gen Processors announced for laptops</h4>
+                            <p>Major tech giants have unveiled their latest silicon chips, promising 2x battery life...</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Trending Sidebar -->
+            <aside class="trending-stories">
+                <h3>Trending Now</h3>
+                <ul class="trending-list">
+                    <li>
+                        <span class="rank">01</span>
+                        <p>Climate Summit 2026 ends with new resolutions</p>
+                    </li>
+                    <li>
+                        <span class="rank">02</span>
+                        <p>Top 10 Web Development frameworks to learn</p>
+                    </li>
+                    <li>
+                        <span class="rank">03</span>
+                        <p>SpaceX successfully lands new heavy booster</p>
+                    </li>
+                    <li>
+                        <span class="rank">04</span>
+                        <p>Electric vehicle sales surge by 40% this quarter</p>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+
+        <!-- Contact/Feedback Form -->
+        <section id="contact" class="contact-section">
+            <h3>Subscribe / Send Feedback</h3>
+            <div class="form-container">
+                <form id="feedbackForm">
+                    <div class="input-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="input-group">
+                        <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit Response</button>
+                </form>
+                <div id="successMessage" class="success-msg">Your response has been recorded!</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Aura News Portal. Designed with Code.</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
